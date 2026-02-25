@@ -32,9 +32,17 @@ Reports are written to `out/` by default:
 ### Configure thresholds
 - Edit `rules.yaml` to adjust validation thresholds (tolerances, covariance limits, plausibility bounds).
 
-## Example output (Markdown summary)
-A run produces a short operator-facing summary plus detailed findings.
-See: `out/good_report.md`
+## Example output (Markdown report)
+
+> # Conjunction Data Validation Report  
+> - **Report time (UTC):** 2026-02-25T13:22:30.677901+00:00  
+> - **Message ID:** demo-001  
+> - **Creation time (UTC):** 2026-02-20T10:00:00+00:00  
+> - **TCA (UTC):** 2026-02-21T10:05:00+00:00  
+>
+> ## Summary  
+> - PASS: 10  
+> - WARN: 0  
 
 ## Project structure
 - `validator/` core library + CLI
