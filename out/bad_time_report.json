@@ -1,0 +1,97 @@
+{
+  "report_time_utc": "2026-02-25T12:09:59.868736Z",
+  "message_id": "demo-bad-time",
+  "creation_time_utc": "2026-02-22T10:00:00Z",
+  "tca_utc": "2026-02-21T10:05:00Z",
+  "findings": [
+    {
+      "check_id": "ID_DISTINCT",
+      "severity": "PASS",
+      "message": "Primary and secondary object_id are distinct.",
+      "details": null
+    },
+    {
+      "check_id": "TIME_ORDER",
+      "severity": "FAIL",
+      "message": "creation_time_utc is not before tca_utc.",
+      "details": {
+        "creation_time_utc": "2026-02-22T10:00:00+00:00",
+        "tca_utc": "2026-02-21T10:05:00+00:00"
+      }
+    },
+    {
+      "check_id": "FRAME_MATCH",
+      "severity": "PASS",
+      "message": "Primary and secondary frames match.",
+      "details": {
+        "frame": "TEME"
+      }
+    },
+    {
+      "check_id": "POS_NORM",
+      "severity": "PASS",
+      "message": "Position norms look reasonable.",
+      "details": {
+        "primary_r_m": 7000000.0,
+        "secondary_r_m": 7000100.0
+      }
+    },
+    {
+      "check_id": "SPEED_NORM",
+      "severity": "PASS",
+      "message": "Speed norms look reasonable.",
+      "details": {
+        "primary_v_mps": 7500.0,
+        "secondary_v_mps": 7490.0
+      }
+    },
+    {
+      "check_id": "MISS_DISTANCE_CONSISTENCY",
+      "severity": "PASS",
+      "message": "miss_distance_m consistent with relative position norm.",
+      "details": {
+        "abs_err_m": 0.0,
+        "tolerance_m": 10.0
+      }
+    },
+    {
+      "check_id": "REL_SPEED_CONSISTENCY",
+      "severity": "PASS",
+      "message": "relative_speed_mps consistent with relative velocity norm.",
+      "details": {
+        "abs_err_mps": 0.0,
+        "tolerance_mps": 1.0
+      }
+    },
+    {
+      "check_id": "COV_SYMMETRY",
+      "severity": "PASS",
+      "message": "Covariance symmetry OK.",
+      "details": {
+        "max_abs_C_minus_CT": 0.0
+      }
+    },
+    {
+      "check_id": "COV_PSD",
+      "severity": "PASS",
+      "message": "Covariance PSD check OK.",
+      "details": {
+        "min_eigenvalue": 25.0
+      }
+    },
+    {
+      "check_id": "COV_STD",
+      "severity": "PASS",
+      "message": "Covariance std magnitudes look reasonable.",
+      "details": {
+        "max_std_m": 5.0
+      }
+    }
+  ],
+  "summary": {
+    "pass": 9,
+    "warn": 0,
+    "fail": 1
+  },
+  "ok": false
+}

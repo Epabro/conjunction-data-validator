@@ -1,0 +1,19 @@
+
+time:
+  warn_if_lead_time_s_below: 60
+
+state:
+  max_position_norm_m_warn: 80000000      # 80,000 km
+  max_speed_mps_warn: 15000              # 15 km/s
+
+consistency:
+  miss_distance_abs_tol_m: 5.0
+  miss_distance_rel_tol_frac: 0.10       # 10%
+  rel_speed_abs_tol_mps: 0.2
+  rel_speed_rel_tol_frac: 0.10
+
+covariance:
+  symmetry_tol: 1e-6
+  psd_eig_tol: -1e-9
+  std_warn_m: 100000                     # 100 km
+  std_fail_m: 10000000                   # 10,000 km
