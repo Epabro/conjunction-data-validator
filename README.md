@@ -16,9 +16,9 @@ Produces machine-readable JSON reports and operator-friendly Markdown summaries,
 ## Quickstart
 
 ### Install (venv)
-`python -m venv .venv`
-`source .venv/bin/activate`
-`pip install -r requirements.txt`
+- `python -m venv .venv`
+- `source .venv/bin/activate`
+- `pip install -r requirements.txt`
 
 
 ### Validate a sample message
