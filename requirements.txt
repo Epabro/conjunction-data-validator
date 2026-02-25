@@ -1,0 +1,6 @@
+pydantic
+PyYAML
+numpy
+pandas
+python-dateutil
+pytest
