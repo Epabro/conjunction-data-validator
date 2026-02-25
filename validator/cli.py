@@ -1,4 +1,8 @@
 import argparse
+from pathlib import Path
+
+from .io import load_message
+
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Conjunction data validator (MVP)")
@@ -10,8 +14,15 @@ def main() -> int:
 
     args = parser.parse_args()
 
-    print(f"[MVP] Would validate: {args.path} -> output dir: {args.out}")
+    out_dir = Path(args.out)
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    msg = load_message(args.path)
+
+    print(f"Loaded message: {msg.message_id}")
+    print(f"TCA: {msg.tca_utc.isoformat()}  Primary: {msg.primary.object_id}  Secondary: {msg.secondary.object_id}")
     return 0
+
 
 if __name__ == "__main__":
     raise SystemExit(main())

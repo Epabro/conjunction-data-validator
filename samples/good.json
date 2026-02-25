@@ -1,0 +1,20 @@
+{
+  "message_id": "demo-001",
+  "creation_time_utc": "2026-02-20T10:00:00Z",
+  "tca_utc": "2026-02-21T10:05:00Z",
+  "primary": {
+    "object_id": "PRIMARY-12345",
+    "position_m": [7000000.0, 0.0, 0.0],
+    "velocity_mps": [0.0, 7500.0, 0.0],
+    "frame": "TEME"
+  },
+  "secondary": {
+    "object_id": "SECONDARY-67890",
+    "position_m": [7000100.0, 0.0, 0.0],
+    "velocity_mps": [0.0, 7490.0, 0.0],
+    "frame": "TEME"
+  },
+  "miss_distance_m": 100.0,
+  "relative_speed_mps": 10.0,
+  "rel_pos_cov_m2": [25.0, 0.0, 0.0, 0.0, 25.0, 0.0, 0.0, 0.0, 25.0]
+}
