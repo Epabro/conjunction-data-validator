@@ -33,6 +33,10 @@ Reports are written to `out/` by default:
 ### Configure thresholds
 - Edit `rules.yaml` to adjust validation thresholds (tolerances, covariance limits, plausibility bounds).
 
+## Example output (Markdown summary)
+A run produces a short operator-facing summary plus detailed findings.
+See: `out/good_report.md`
+
 ## Project structure
 - `validator/` core library + CLI
 - `samples/` example inputs (good and intentionally bad)
