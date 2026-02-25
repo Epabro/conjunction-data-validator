@@ -34,15 +34,15 @@ Reports are written to `out/` by default:
 
 ## Example output (Markdown report)
 
-> # Conjunction Data Validation Report  
-> - **Report time (UTC):** 2026-02-25T13:22:30.677901+00:00  
-> - **Message ID:** demo-001  
-> - **Creation time (UTC):** 2026-02-20T10:00:00+00:00  
-> - **TCA (UTC):** 2026-02-21T10:05:00+00:00  
->
-> ## Summary  
-> - PASS: 10  
-> - WARN: 0  
+# Conjunction Data Validation Report  
+- **Report time (UTC):** 2026-02-25T13:22:30.677901+00:00  
+- **Message ID:** demo-001  
+- **Creation time (UTC):** 2026-02-20T10:00:00+00:00  
+- **TCA (UTC):** 2026-02-21T10:05:00+00:00  
+
+## Summary  
+- PASS: 10  
+- WARN: 0  
 
 ## Project structure
 - `validator/` core library + CLI
