@@ -16,14 +16,14 @@ Produces machine-readable JSON reports and operator-friendly Markdown summaries,
 ## Quickstart
 
 ### Install (venv)
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
+`python -m venv .venv`
+`source .venv/bin/activate`
+`pip install -r requirements.txt`
 
 
 ### Validate a sample message
-python -m validator.cli validate samples/good.json
-python -m validator.cli validate samples/bad_time.json ; echo $?
+- `python -m validator.cli validate samples/good.json`
+- `python -m validator.cli validate samples/bad_time.json ; echo $?`
 
 
 Reports are written to `out/` by default:
@@ -31,7 +31,7 @@ Reports are written to `out/` by default:
 - `out/good_report.md`
 
 ### Configure thresholds
-Edit `rules.yaml` to adjust validation thresholds (tolerances, covariance limits, plausibility bounds).
+- Edit `rules.yaml` to adjust validation thresholds (tolerances, covariance limits, plausibility bounds).
 
 ## Project structure
 - `validator/` core library + CLI
