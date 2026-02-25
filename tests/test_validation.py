@@ -17,3 +17,10 @@ def test_bad_time_fails():
     report = validate_message(msg, rules)
     assert report.ok is False
     assert report.summary["fail"] >= 1
+
+def test_bad_cov_fails():
+    msg = load_message("samples/bad_cov.json")
+    rules = load_rules("rules.yaml")
+    report = validate_message(msg, rules)
+    assert report.ok is False
+    assert report.summary["fail"] >= 1
