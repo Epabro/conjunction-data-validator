@@ -2,8 +2,7 @@
 
 # Conjunction Data Validator (MVP)
 
-Autonomous, config-driven validation of conjunction / collision-avoidance data products (simplified CDM-like messages).  
-Produces machine-readable JSON reports and operator-friendly Markdown summaries, and returns non-zero exit codes on validation failures (suitable for automation pipelines).
+Autonomous, config-driven validation of conjunction / collision-avoidance data products (simplified CDM-like messages). Produces machine-readable JSON reports and operator-friendly Markdown summaries, and returns non-zero exit codes on validation failures (suitable for automation pipelines).
 
 ## Features
 - Schema validation (required fields, types, forbidden extras)
